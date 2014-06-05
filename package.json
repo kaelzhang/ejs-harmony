@@ -3,7 +3,14 @@
   "description": "A fork of ejs with more fault tolerance.",
   "version": "1.0.0",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
-  "keywords": ["template", "engine", "ejs"],
+  "keywords": [
+    "template", 
+    "engine", 
+    "ejs",
+    "fault",
+    "tolerance",
+    "harmony"
+  ],
   "devDependencies": {
     "mocha": "*",
     "should": "*"
