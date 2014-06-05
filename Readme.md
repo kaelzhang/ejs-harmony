@@ -4,11 +4,25 @@ Embedded JavaScript templates.
 
 This is a fork of ejs with more fault tolerance.
 
-[![Build Status](https://travis-ci.org/visionmedia/ejs.png)](https://travis-ci.org/visionmedia/ejs)
+- If a local properties is not included by `options`, ejs-harmony will not fail.
+
+`template`:
+
+```
+<%= user %>
+```
+
+```js
+ejs.render(template, {}); // will not fail
+```
+
+****
+
+[![Build Status](https://travis-ci.org/kaelzhang/ejs-harmony.png)](https://travis-ci.org/kaelzhang/ejs-harmony)
 
 ## Installation
 
-    $ npm install ejs
+    $ npm install ejs-harmony --save
 
 ## Features
 

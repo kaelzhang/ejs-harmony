@@ -33,13 +33,15 @@ describe('ejs.compile(str, options)', function(){
   it('should throw if there are syntax errors', function(){
     try {
       ejs.compile(fixture('fail.ejs'));
-    } catch (err) {
-      err.message.should.include('compiling ejs');
+    } catch (err) { console.log(err)
+      // err.message.should.contain('compiling ejs');
+      assert(~err.message.indexOf('compiling ejs'));
 
       try {
         ejs.compile(fixture('fail.ejs'), { filename: 'fail.ejs' });
       } catch (err) {
-        err.message.should.include('fail.ejs');
+        // err.message.should.include('fail.ejs');
+        assert(~err.message.indexOf('fail.ejs'));
         return;
       }
     }
