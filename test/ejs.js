@@ -33,7 +33,7 @@ describe('ejs.compile(str, options)', function(){
   it('should throw if there are syntax errors', function(){
     try {
       ejs.compile(fixture('fail.ejs'));
-    } catch (err) { console.log(err)
+    } catch (err) {
       // err.message.should.contain('compiling ejs');
       assert(~err.message.indexOf('compiling ejs'));
 
