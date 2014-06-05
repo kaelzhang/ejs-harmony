@@ -1,7 +1,7 @@
 {
   "name": "ejs-harmony",
   "description": "A fork of ejs with more fault tolerance.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "keywords": [
     "template", 
