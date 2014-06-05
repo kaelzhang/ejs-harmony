@@ -110,7 +110,7 @@ describe('ejs.renderFile(path, options, fn)', function(){
     });
   })
 
-  it("should not throw if a property is not defined", function(){
+  it("should not throw if a property is not defined", function(done){
     var options = {};
     ejs.renderFile('test/fixtures/harmony.ejs', options, function(err, html){
       if (err) return done(err);
