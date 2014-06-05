@@ -1,4 +1,4 @@
-# ejs-harmony
+# ejs-harmony [![Build Status](https://travis-ci.org/kaelzhang/ejs-harmony.svg)](https://travis-ci.org/kaelzhang/ejs-harmony)
 
 Embedded JavaScript templates.
 
@@ -17,8 +17,6 @@ ejs.render(template, {}); // will not fail
 ```
 
 ****
-
-[![Build Status](https://travis-ci.org/kaelzhang/ejs-harmony.png)](https://travis-ci.org/kaelzhang/ejs-harmony)
 
 ## Installation
 
