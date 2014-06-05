@@ -110,6 +110,15 @@ describe('ejs.renderFile(path, options, fn)', function(){
     });
   })
 
+  it("should not throw if a property is not defined", function(){
+    var options = {};
+    ejs.renderFile('test/fixtures/harmony.ejs', options, function(err, html){
+      if (err) return done(err);
+      html.should.equal('undefined');
+      done();
+    });
+  });
+
   it('should not catch err threw by callback', function(done){
     var options = { name: 'tj', open: '{', close: '}' };
     var counter = 0;
