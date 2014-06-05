@@ -1,6 +1,8 @@
-# EJS
+# ejs-harmony
 
 Embedded JavaScript templates.
+
+This is a fork of ejs with more fault tolerance.
 
 [![Build Status](https://travis-ci.org/visionmedia/ejs.png)](https://travis-ci.org/visionmedia/ejs)
 
